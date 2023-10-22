@@ -15,7 +15,7 @@ A simple demo of compiling Rust code into wasm, and loading wasm in web page.
 
 ## Limitations
 
-- [WebAssembly is not yet integrated with <script type='module'> or import statements, thus there is not a path to have the browser fetch modules for you using imports.](https://developer.mozilla.org/en-US/docs/WebAssembly/Loading_and_running)
+- [WebAssembly is not yet integrated with \<script type='module'\> or import statements, thus there is not a path to have the browser fetch modules for you using imports.](https://developer.mozilla.org/en-US/docs/WebAssembly/Loading_and_running)
 - [WebAssembly has no direct access to the DOM apis. To access any Web API, WebAssembly needs to call out to JavaScript API, which then makes the Web API call.](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts#porting_from_cc)
 
 ## Proposals
