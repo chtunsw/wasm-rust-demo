@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WebAssembly Rust Demo</title>
+    <script>
+      // Load function from wasm file
+      (async () => {
+        const response = await fetch(
+          "target/wasm32-unknown-unknown/release/wasm_rust_demo.wasm"
+        );
+        const buffer = await response.arrayBuffer();
+        const instantiated = await WebAssembly.instantiate(buffer);
+
+        window.wasm_add = instantiated.instance.exports.wasm_add;
+        console.log("Function loaded from wasm!");
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
