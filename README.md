@@ -9,6 +9,8 @@ A simple demo of compiling Rust code into wasm, and loading wasm in web page.
 
 ## Usage
 
+- Install rust from here: https://www.rust-lang.org/tools/install
+- Install `wasm32-unknown-unknown` target with: `rustup target add wasm32-unknown-unknown`
 - Compile rust code with: `cargo build --target wasm32-unknown-unknown --release`. A wasm file named `wasm_rust_demo.wasm` will be created under `./target/wasm32-unknown-unknown/release/` directory.
 - Move `wasm_rust_demo.wasm` to root directory of this project.
 - Host `index.html` page with any server that you like.
